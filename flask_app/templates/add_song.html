@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <Link rel = "stylesheet" type="text/css" href = "{{ url_for('static', filename='css/my_style.css')}}" >
+  <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js')}}"></script>
+  <title>Add song</title>
+</head>
+<body>
+  <h1>Add Song</h1>
+  <form action="/songs/add" method="POST">
+    <input type="text" name="title">
+    <input type="type" name="artist">
+    <input type="number" name="rating">
+    <input type="submit" value="ADD">
+  </form>
+</body>
+</html>

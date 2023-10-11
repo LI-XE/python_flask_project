@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <Link rel = "stylesheet" type="text/css" href = "{{ url_for('static', filename='css/my_style.css')}}" >
+  <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js')}}"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Python Flask</h1>
+  <p><a href="/songs/add">Add Song</a></p>
+  {% for song in songs %}
+    <p>{{song.title}} by {{song.artist}} | <a href="/songs/{{song.id}}">VIEW</a></p>
+  {% endfor %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+asgiref = "==3.3.1"
+click = "==7.1.2"
+django = "==3.1.5"
+flask = "*"
+itsdangerous = "==1.1.0"
+jinja2 = "==2.11.2"
+markupsafe = "==1.1.1"
+pytz = "==2020.5"
+sqlparse = "==0.4.1"
+werkzeug = "==1.0.1"
+pymysql = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <Link rel = "stylesheet" type="text/css" href = "{{ url_for('static', filename='css/my_style.css')}}" >
+  <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js')}}"></script>
+  <title>Show Song</title>
+</head>
+<body>
+  <h1>Song Info</h1>
+  <ul>
+    <li>Title: {{song.title}}</li>
+    <li>Artist: {{song.artist}}</li>
+    <li>Rating: {{song.rating}}</li>
+    <li>Added on: {{song.created_at}}</li>
+  </ul>
+  <p><a href="/songs/{{song.id}}/update">Edit Song</a></p>
+  <p><a href="/songs/{{song.id}}/delete">Delete Song</a></p>
+</body>
+</html>
