@@ -1,5 +1,5 @@
 # a cursor is the object we use to interact with the database
-import pymysql.cursors from
+import pymysql.cursors
 # this class will give us an instance of a connection to our database
 
 
